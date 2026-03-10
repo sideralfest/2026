@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pululahua Sideral Fest</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+
+<!-- ============================= -->
+<!-- MENU -->
+<!-- ============================= -->
+
+<header class="menu">
+
+<nav class="menu-container">
+
+<div class="menu-left">
+<a href="#convocatorias">Convocatorias</a>
+<a href="#nosotros">...</a>
+</div>
+
+<div class="logo-centro">
+<img src="recursos/logo-05-05.png">
+</div>
+
+<div class="menu-right">
+<a href="#merch">...</a>
+<a href="#entradas">...</a>
+</div>
+
+<!-- BOTON HAMBURGUESA -->
+<div class="menu-toggle" id="menuToggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- ============================= -->
+<!-- HERO VIDEO -->
+<!-- ============================= -->
+
+<section class="hero" id="hero">
+
+<video autoplay muted loop playsinline class="video-fondo" id="heroVideo">
+<source src="recursos/web.mp4" type="video/mp4">
+</video>
+
+<div class="hero-contenido"></div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- CONVOCATORIAS -->
+<!-- ============================= -->
+
+<section id="convocatorias" class="convocatorias">
+
+<h1>¿QUIERES SER PARTE DE NUESTRA SEXTA EDICIÓN?</h1>
+<h2 class="subtitulo">Estamos buscando</h2>
+
+<div class="conv-grid">
+
+
+<div class="conv-item" onclick="abrirModal('recursos/music.png','recursos/convocatoria-musicos-emergentes.pdf')">
+
+<img src="recursos/ante.png">
+
+<button>Músicos emergentes</button>
+
+</div>
+
+
+<div class="conv-item" onclick="abrirModal('recursos/medios.png','recursos/medios.pdf')">
+
+<img src="recursos/zor.png">
+
+<button>Medios de difusión</button>
+
+</div>
+
+
+<div class="conv-item" onclick="abrirModal('recursos/emprendedores.png','recursos/emprendedores.pdf')">
+
+<img src="recursos/hon.png">
+
+<button>Emprendedores</button>
+
+</div>
+
+
+<div class="conv-item" onclick="abrirModal('recursos/artistas.png','recursos/artistas.pdf')">
+
+<img src="recursos/art.png">
+
+<button>Artistas visuales</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- FOOTER IMAGEN -->
+<!-- ============================= -->
+
+<footer class="footer">
+
+<img src="recursos/pie.png" class="footer-img">
+
+<div class="footer-contenido">
+
+<h2>Copyright © 2025 El Pululahua Sideral Fest | Todos los derechos reservados.</h2>
+
+</div>
+
+</footer>
+
+
+
+<!-- ============================= -->
+<!-- MODAL -->
+<!-- ============================= -->
+
+<div id="modalConv" class="modal">
+
+<div class="modal-content">
+
+<img id="imagenModal">
+
+<div class="modal-botones">
+
+<a id="descargaArchivo" download>
+<button>Descargar información</button>
+</a>
+
+<span class="cerrar" onclick="cerrarModal()">X</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
