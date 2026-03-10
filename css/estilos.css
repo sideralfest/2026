@@ -129,15 +129,15 @@ display:block;
 .hero{
 
 position:relative;
-height:180vh;
+
+/* AQUI CAMBIAS LA ALTURA SIN AFECTAR EL VIDEO */
+height:500vh;
 
 overflow:hidden;
 
-display:flex;
-align-items:flex-start;
-justify-content:center;
-
 }
+
+/* VIDEO */
 
 .video-fondo{
 
@@ -146,14 +146,12 @@ position:absolute;
 top:0;
 left:50%;
 
-width:100%;
+/* el ancho del video queda fijo al ancho de pantalla */
+width:100vw;
 height:auto;
 
-min-height:120%;
-
-transform:translate(-50%,0);
-
-object-fit:cover;
+/* mantiene proporción original */
+transform:translateX(-50%);
 
 z-index:1;
 
