@@ -123,43 +123,41 @@ display:block;
 
 
 /* ============================= */
-/* HERO */
+/* HERO VIDEO */
 /* ============================= */
 
 .hero{
+
 position:relative;
 height:180vh;
+
 overflow:hidden;
+
 display:flex;
 align-items:flex-start;
 justify-content:center;
+
 }
 
 .video-fondo{
 
 position:absolute;
+
 top:0;
 left:50%;
 
 width:100%;
 height:auto;
 
-min-height:100%;
+min-height:120%;
 
-transform:translateX(-50%) translateY(0);
+transform:translate(-50%,0);
 
 object-fit:cover;
 
 z-index:1;
 
 }
-
-.hero-contenido{
-position:relative;
-z-index:2;
-text-align:center;
-}
-
 
 
 /* ============================= */

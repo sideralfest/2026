@@ -7,18 +7,14 @@ const video = document.getElementById("heroVideo");
 
 window.addEventListener("scroll", () => {
 
-const rect = hero.getBoundingClientRect();
-const windowHeight = window.innerHeight;
+const scrollY = window.scrollY;
 
-let progress = (windowHeight - rect.top) / (windowHeight + rect.height);
-progress = Math.max(0, Math.min(1, progress));
+/* velocidad parallax (más pequeño = más suave) */
+const velocidad = scrollY * 0.4;
 
-const move = progress * 250;
-
-video.style.transform = `translateX(-50%) translateY(${move}px)`;
+video.style.transform = `translate(-50%, ${velocidad}px)`;
 
 });
-
 
 /* ============================= */
 /* ABRIR MODAL */
